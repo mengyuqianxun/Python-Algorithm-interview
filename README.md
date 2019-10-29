@@ -12,7 +12,7 @@
 
 | 对应章节 |    数据结构    |
 | :------: | :------------: |
-|    1     |      链表      |
+|    1     | [链表](#链表)  |
 |    2     | 栈、队列和哈希 |
 |    3     |     二叉树     |
 |    4     |      数组      |
@@ -24,7 +24,7 @@
 
 
 
-### 链表
+## 链表
 
 ​		在Python中，没有指针的概念，而类似指针的功能都是通过引用来实现的，为了方便理解，我仍使用指针来进行描述，而在实现的代码中，都是通过引用来建立结点之间的关系。
 
@@ -32,25 +32,25 @@
 
 ```python
 class LNode:
-    def __new__(self,x):
+    def __init__(self,x):
         self.data = x
         self.next = None
 ```
 
 ​		另外，Python中没有数组的数据结构，但是列表和数组很像。本书代码中均采用列表来表示有序数组。
 
-| 序号 |                        Problem                         | Difficulty | Time and Space | Solution | 备注 |
-| :--: | :----------------------------------------------------: | :--------: | :------------: | :------: | :--: |
-|  1   |           [链表的逆序](ch1_list/Problems.py)           |     3      |                |          |      |
-|  2   |      [无序链表移除重复项]((ch1_list/Problems.py))      |     3      |                |          |      |
-|  3   |   [计算两个单链表表示数之和]((ch1_list/Problems.py))   |     3      |                |          |      |
-|  4   |        [链表的重新排序]((ch1_list/Problems.py))        |     3      |                |          |      |
-|  5   |   [找出单链表的倒数第k个数]((ch1_list/Problems.py))    |     3      |                |          |      |
-|  6   |      [检测单链表是否有环]((ch1_list/Problems.py))      |     4      |                |          |      |
-|  7   |      [把链表相邻元素翻转]((ch1_list/Problems.py))      |     3      |                |          |      |
-|  8   |  [把链表以K个结点为一组翻转]((ch1_list/Problems.py))   |     3      |                |          |      |
-|  9   |       [合并两个有序链表]((ch1_list/Problems.py))       |     3      |                |          |      |
-|  10  | [给定某结点的指针，删除该结点]((ch1_list/Problems.py)) |     4      |                |          |      |
-|  11  |  [判断两个无环单链表是否交叉]((ch1_list/Problems.py))  |     4      |                |          |      |
-|  12  |         [展开链接列表]((ch1_list/Problems.py))         |     4      |                |          |      |
+| 序号 |                         问题                         | 难度 |                             代码                             |              原理               |
+| :--: | :--------------------------------------------------: | :--: | :----------------------------------------------------------: | :-----------------------------: |
+|  1   |          [链表的逆序](ch1_list/Problems.py)          |  3   | 1.[就地逆序](ch1_list/1_1.py)2.[递归法](ch1_list/1_2.py)3.[插入法](ch1_list/1_3.py) | [Reverse](ch1_list/thinking.py) |
+|  2   |      [无序链表移除重复项](ch1_list/Problems.py)      |  3   |   1.[顺序删除](ch1_list/2_1.py)2.[递归法](ch1_list/2_2.py)   | [Delete](ch1_list/thinking.py)  |
+|  3   |   [计算两个单链表表示数之和](ch1_list/Problems.py)   |  3   |                 [链表相加法](ch1_list/3.py)                  |  [Count](ch1_list/thinking.py)  |
+|  4   |        [链表的重新排序](ch1_list/Problems.py)        |  3   |                                                              |                                 |
+|  5   |   [找出单链表的倒数第k个数](ch1_list/Problems.py)    |  3   |                                                              |                                 |
+|  6   |      [检测单链表是否有环](ch1_list/Problems.py)      |  4   |                                                              |                                 |
+|  7   |      [把链表相邻元素翻转](ch1_list/Problems.py)      |  3   |                                                              |                                 |
+|  8   |  [把链表以K个结点为一组翻转](ch1_list/Problems.py)   |  3   |                                                              |                                 |
+|  9   |       [合并两个有序链表](ch1_list/Problems.py)       |  3   |                                                              |                                 |
+|  10  | [给定某结点的指针，删除该结点](ch1_list/Problems.py) |  4   |                                                              |                                 |
+|  11  |  [判断两个无环单链表是否交叉](ch1_list/Problems.py)  |  4   |                                                              |                                 |
+|  12  |         [展开链接列表](ch1_list/Problems.py)         |  4   |                                                              |                                 |
 
