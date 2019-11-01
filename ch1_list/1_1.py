@@ -4,6 +4,7 @@ class LNode:
         self.data = x
         self.next = None
 
+#带头结点的链表逆序
 def Reverse(head):
     #判断链表是否为空
     if head.next == None or head.next.next == None:

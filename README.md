@@ -2,13 +2,13 @@
 
 **ghs,2019-10.28**
 
-​		本项目用于复现**猿媛之家**书籍《**Python程序员面试算法宝典**》中算法代码。书中代码采用Python2实现。本人参照作者思路，用Python3进行编程复现。
+&emsp;&emsp;本项目用于复现**猿媛之家**书籍《**Python程序员面试算法宝典**》中算法代码。书中代码采用Python2实现。本人参照作者思路，用Python3进行编程复现。
 
-![Cover](./cover.jpg)
+![Cover](cover.jpg)
 
 ## 常用数据结构实现
 
-​		本块主要列举书中所涉及到的数据结构的实现。其中都用Python进行编译。
+&emsp;&emsp;本块主要列举书中所涉及到的数据结构的实现。其中都用Python进行编译。
 
 | 对应章节 |    数据结构    |
 | :------: | :------------: |
@@ -26,9 +26,9 @@
 
 ## 链表
 
-​		在Python中，没有指针的概念，而类似指针的功能都是通过引用来实现的，为了方便理解，我仍使用指针来进行描述，而在实现的代码中，都是通过引用来建立结点之间的关系。
+&emsp;&emsp;在Python中，没有指针的概念，而类似指针的功能都是通过引用来实现的，为了方便理解，我仍使用指针来进行描述，而在实现的代码中，都是通过引用来建立结点之间的关系。
 
-​		单链表数据结构的定义实例
+&emsp;&emsp;单链表数据结构的定义实例
 
 ```python
 class LNode:
@@ -37,20 +37,20 @@ class LNode:
         self.next = None
 ```
 
-​		另外，Python中没有数组的数据结构，但是列表和数组很像。本书代码中均采用列表来表示有序数组。
+&emsp;&emsp;另外，Python中没有数组的数据结构，但是列表和数组很像。本书代码中均采用列表来表示有序数组。
 
-| 序号 |                         问题                         | 难度 |                             代码                             |              原理               |
-| :--: | :--------------------------------------------------: | :--: | :----------------------------------------------------------: | :-----------------------------: |
-|  1   |          [链表的逆序](ch1_list/Problems.py)          |  3   | 1.[就地逆序](ch1_list/1_1.py)2.[递归法](ch1_list/1_2.py)3.[插入法](ch1_list/1_3.py) | [Reverse](ch1_list/thinking.py) |
-|  2   |      [无序链表移除重复项](ch1_list/Problems.py)      |  3   |   1.[顺序删除](ch1_list/2_1.py)2.[递归法](ch1_list/2_2.py)   | [Delete](ch1_list/thinking.py)  |
-|  3   |   [计算两个单链表表示数之和](ch1_list/Problems.py)   |  3   |                 [链表相加法](ch1_list/3.py)                  |  [Count](ch1_list/thinking.py)  |
-|  4   |        [链表的重新排序](ch1_list/Problems.py)        |  3   |                                                              |                                 |
-|  5   |   [找出单链表的倒数第k个数](ch1_list/Problems.py)    |  3   |                                                              |                                 |
-|  6   |      [检测单链表是否有环](ch1_list/Problems.py)      |  4   |                                                              |                                 |
-|  7   |      [把链表相邻元素翻转](ch1_list/Problems.py)      |  3   |                                                              |                                 |
-|  8   |  [把链表以K个结点为一组翻转](ch1_list/Problems.py)   |  3   |                                                              |                                 |
-|  9   |       [合并两个有序链表](ch1_list/Problems.py)       |  3   |                                                              |                                 |
-|  10  | [给定某结点的指针，删除该结点](ch1_list/Problems.py) |  4   |                                                              |                                 |
-|  11  |  [判断两个无环单链表是否交叉](ch1_list/Problems.py)  |  4   |                                                              |                                 |
-|  12  |         [展开链接列表](ch1_list/Problems.py)         |  4   |                                                              |                                 |
+| 序号 |                         问题                         | 难度 |                             代码                             |               原理               |
+| :--: | :--------------------------------------------------: | :--: | :----------------------------------------------------------: | :------------------------------: |
+|  1   |          [链表的逆序](ch1_list/Problems.py)          |  3   | 1.[就地逆序](ch1_list/1_1.py)2.[递归法](ch1_list/1_2.py)3.[插入法](ch1_list/1_3.py) | [Reverse](ch1_list/thinking1.py) |
+|  2   |      [无序链表移除重复项](ch1_list/Problems.py)      |  3   |   1.[顺序删除](ch1_list/2_1.py)2.[递归法](ch1_list/2_2.py)   | [Delete](ch1_list/thinking1.py)  |
+|  3   |   [计算两个单链表表示数之和](ch1_list/Problems.py)   |  3   |                 [链表相加法](ch1_list/3.py)                  |  [Count](ch1_list/thinking1.py)  |
+|  4   |        [链表的重新排序](ch1_list/Problems.py)        |  3   |               [中间结点逆序法](ch1_list/4.py)                | [Reorder](ch1_list/thinking1.py) |
+|  5   |   [找出单链表的倒数第k个数](ch1_list/Problems.py)    |  3   |                 [快慢指针法](ch1_list/5.py)                  |  [Find](ch1_list/thinking2.py)   |
+|  6   |      [检测单链表是否有环](ch1_list/Problems.py)      |  4   |               [快慢指针遍历法](ch1_list/6.py)                |  [Test](ch1_list/thinking2.py)   |
+|  7   |      [把链表相邻元素翻转](ch1_list/Problems.py)      |  3   |                 [就地逆序法](ch1_list/7.py)                  |  [Flip](ch1_list/thinking2.py)   |
+|  8   |  [把链表以K个结点为一组翻转](ch1_list/Problems.py)   |  3   |                   [翻转法](ch1_list/8.py)                    |  [Flip](ch1_list/thinking2.py)   |
+|  9   |       [合并两个有序链表](ch1_list/Problems.py)       |  3   |                                                              |                                  |
+|  10  | [给定某结点的指针，删除该结点](ch1_list/Problems.py) |  4   |                                                              |                                  |
+|  11  |  [判断两个无环单链表是否交叉](ch1_list/Problems.py)  |  4   |                                                              |                                  |
+|  12  |         [展开链接列表](ch1_list/Problems.py)         |  4   |                                                              |                                  |
 
