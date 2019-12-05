@@ -10,17 +10,17 @@
 
 &emsp;&emsp;本块主要列举书中所涉及到的数据结构的实现。其中都用Python进行编译。
 
-| 对应章节 |    数据结构    |
-| :------: | :------------: |
-|    1     | [链表](#链表)  |
-|    2     | 栈、队列和哈希 |
-|    3     |     二叉树     |
-|    4     |      数组      |
-|    5     |     字符串     |
-|    6     |  基本数字运算  |
-|    7     | 排列组合与概率 |
-|    8     |      排序      |
-|    9     |     大数据     |
+| 对应章节 |             数据结构              |
+| :------: | :-------------------------------: |
+|    1     |           [链表](#链表)           |
+|    2     | [栈、队列和哈希](#栈、队列和哈希) |
+|    3     |              二叉树               |
+|    4     |               数组                |
+|    5     |              字符串               |
+|    6     |           基本数字运算            |
+|    7     |          排列组合与概率           |
+|    8     |               排序                |
+|    9     |              大数据               |
 
 
 
@@ -53,4 +53,27 @@ class LNode:
 |  10  | [给定某结点的指针，删除该结点](ch1_list/Problems.py) |  4   |               [复制数据删除法](ch1_list/10.py)               |   [Delete](ch1_list/thinking3.py)    |
 |  11  |  [判断两个无环单链表是否交叉](ch1_list/Problems.py)  |  4   |                  [尾结点法](ch1_list/11.py)                  | [IsIntersect](ch1_list/thinking3.py) |
 |  12  |         [展开链接列表](ch1_list/Problems.py)         |  4   |                   [归并法](ch1_list/12.py)                   |    [Merge](ch1_list/thinking3.py)    |
+
+
+
+## 栈、队列与哈希
+
+&emsp;&emsp;栈与队列是在程序设计中被广泛使用的两种重要线性数据结构，都是在一个特定范围的存储单元中存储的数据，这些数据可以重新被取出使用。
+
+&emsp;&emsp;不同的是，栈先存进去的数据最后只能最后被取出来，是LIFO(Last In First Out，后进先出)，它将进行顺序逆序，即先进后出，后进先出；队列，先排队先买，后排队后买，是FIFO(First In First Out，先进先出)，它保持进出顺序一致，即先进先出，后进后出。
+
+![a2](a2.jpg)
+
+| 序号 |                        问题                        | 难度 | 代码 | 原理 |
+| :--: | :------------------------------------------------: | :--: | :--: | :--: |
+|  1   |       [实现栈](ch2_stack_queue/Problems.md)        |  3   |      |      |
+|  2   |      [实现队列](ch2_stack_queue/Problems.md)       |  3   |      |      |
+|  3   |       [翻转栈](ch2_stack_queue/Problems.md)        |  4   |      |      |
+|  4   |    [判断出栈序列](ch2_stack_queue/Problems.md)     |  3   |      |      |
+|  5   | [求栈中最小元素(O(1))](ch2_stack_queue/Problem.md) |  4   |      |      |
+|  6   |   [用栈模拟队列操作](ch2_stack_queue/Problem.md)   |  3   |      |      |
+|  7   |    [设计排序系统](ch2_stack_queue/Problems.md)     |  4   |      |      |
+|  8   |   [实现LRU缓存方案](ch2_stack_queue/Problems.md)   |  4   |      |      |
+|  9   | [从给定车票找出旅程](ch2_stack_queue/Problems.md)  |  3   |      |      |
+|  10  | [数组中找出条件数对](ch2_stack_queue/Problems.md)  |  3   |      |      |
 
