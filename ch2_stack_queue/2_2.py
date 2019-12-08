@@ -22,8 +22,34 @@ class MyQueue():
     def enQueue(self,e):
         tmp = LNode(e)
         if self.pHead == None:
-            self.pHead = self.pEnd =tmp
+            self.pHead = self.pEnd = tmp
         else:
             self.pEnd.next = tmp
             self.pEnd = tmp
-    
+    #出队列，删除列首元素
+    def deQueue(self):
+        if self.pHead == None:
+            print(u"出队列失败，队列已为空")
+            return 
+        else:
+            self.pHead = self.pHead.next
+    #查看队列首元素
+    def getFront(self):
+        if self.pHead == 0:
+            print(u"队列为空")
+        else:
+            return self.pHead.data
+    #查看队列尾元素
+    def getBack(self):
+        if self.pEnd == 0:
+            print(u"队列为空")
+        else:
+            return self.pEnd.data
+
+if __name__ == "__main__":
+    queue = MyQueue()
+    queue.enQueue(1)
+    queue.enQueue(2)
+    print(u'队列头元素为：'+str(queue.getFront()))
+    print(u'队列尾元素为:'+str(queue.getBack()))
+    print(u'队列大小为:'+str(queue.size()))
