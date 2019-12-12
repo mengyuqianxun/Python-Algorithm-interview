@@ -24,14 +24,11 @@ class Stack:
     #压栈
     def push(self,item):
         self.items.append(item)
+
+#求栈的最小元素
+def minsOfStack(s):
+    elemStack = Stack()
+    minStack = Stack()
     
-if __name__=="__main__":
-    s=Stack()
-    s.push(4)
-    print(u'栈顶元素为：'+str(s.top()))
-    print(u'栈大小为：'+str(s.size()))
-    s.pop()
-    print(u'弹栈成功')
-    s.pop()
 
 

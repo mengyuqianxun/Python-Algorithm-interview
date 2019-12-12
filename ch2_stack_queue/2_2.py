@@ -3,7 +3,7 @@ class LNode():
         self.data = x
         self.next = None
 
-class MyQueue():
+class Queue():
     def __init__(self):
         self.pHead = None
         self.pEnd = None
@@ -47,7 +47,7 @@ class MyQueue():
             return self.pEnd.data
 
 if __name__ == "__main__":
-    queue = MyQueue()
+    queue = Queue()
     queue.enQueue(1)
     queue.enQueue(2)
     print(u'队列头元素为：'+str(queue.getFront()))

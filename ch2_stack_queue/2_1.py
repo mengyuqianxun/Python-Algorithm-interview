@@ -1,4 +1,4 @@
-class MyQueue:
+class Queue:
     def __init__(self):
         self.array=[]
         self.front=0
@@ -31,7 +31,7 @@ class MyQueue:
         self.rear += 1
     
 if __name__ == "__main__":
-    queue = MyQueue()
+    queue = Queue()
     queue.enQueue(1)
     queue.enQueue(2)
     print(u'队列头元素为：'+str(queue.getFront()))

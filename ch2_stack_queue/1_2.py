@@ -3,7 +3,7 @@ class LNode:
         self.data = x
         self.next = None
 
-class MyStack:
+class Stack:
     def __init__(self):
         self.data = None
         self.next = None
@@ -44,7 +44,7 @@ class MyStack:
             return None
 
 if __name__ == "__main__":
-    stack = MyStack()
+    stack = Stack()
     stack.push(1)
     print(u'栈顶元素为：'+str(stack.top()))
     print(u'栈大小为：'+str(stack.size()))
