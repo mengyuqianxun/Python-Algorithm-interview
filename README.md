@@ -64,16 +64,16 @@ class LNode:
 
 ![a2](a2.jpg)
 
-| 序号 |                        问题                        | 难度 |                             代码                             |                 原理                  |
-| :--: | :------------------------------------------------: | :--: | :----------------------------------------------------------: | :-----------------------------------: |
-|  1   |       [实现栈](ch2_stack_queue/Problems.md)        |  3   | 1.[数组实现](ch2_stack_queue/1_1.py)2.[链表实现](ch2_stack_queue/1_2.py) | [Stack](ch2_stack_queue/thinking1.md) |
-|  2   |      [实现队列](ch2_stack_queue/Problems.md)       |  3   | 1.[数组实现](ch2_stack_queue/2_1.py)2.[链表实现](ch2_stack_queue/2_2.py) | [Queue](ch2_stack_queue/thinking1.md) |
-|  3   |       [翻转栈](ch2_stack_queue/Problems.md)        |  4   |                                                              | [Flip](ch2_stack_queue/thinking1.md)  |
-|  4   |    [判断出栈序列](ch2_stack_queue/Problems.md)     |  3   |                                                              |                                       |
-|  5   | [求栈中最小元素(O(1))](ch2_stack_queue/Problem.md) |  4   |                                                              |                                       |
-|  6   |   [用栈模拟队列操作](ch2_stack_queue/Problem.md)   |  3   |                                                              |                                       |
-|  7   |    [设计排序系统](ch2_stack_queue/Problems.md)     |  4   |                                                              |                                       |
-|  8   |   [实现LRU缓存方案](ch2_stack_queue/Problems.md)   |  4   |                                                              |                                       |
-|  9   | [从给定车票找出旅程](ch2_stack_queue/Problems.md)  |  3   |                                                              |                                       |
-|  10  | [数组中找出条件数对](ch2_stack_queue/Problems.md)  |  3   |                                                              |                                       |
+| 序号 |                        问题                        | 难度 |                             代码                             |                        原理                        |
+| :--: | :------------------------------------------------: | :--: | :----------------------------------------------------------: | :------------------------------------------------: |
+|  1   |       [实现栈](ch2_stack_queue/Problems.md)        |  3   | 1.[数组实现](ch2_stack_queue/1_1.py)2.[链表实现](ch2_stack_queue/1_2.py) |       [Stack](ch2_stack_queue/thinking1.md)        |
+|  2   |      [实现队列](ch2_stack_queue/Problems.md)       |  3   | 1.[数组实现](ch2_stack_queue/2_1.py)2.[链表实现](ch2_stack_queue/2_2.py) |       [Queue](ch2_stack_queue/thinking1.md)        |
+|  3   |       [翻转栈](ch2_stack_queue/Problems.md)        |  4   |                 [递归](ch2_stack_queue/3.py)                 |        [Flip](ch2_stack_queue/thinking1.md)        |
+|  4   |    [判断出栈序列](ch2_stack_queue/Problems.md)     |  3   |               [模拟入栈](ch2_stack_queue/4.py)               |       [Array](ch2_stack_queue/thinking1.md)        |
+|  5   | [求栈中最小元素(O(1))](ch2_stack_queue/Problem.md) |  4   |               [两栈结构](ch2_stack_queue/5.py)               |    [Double-Stack](ch2_stack_queue/thinking1.md)    |
+|  6   | [用两个栈模拟队列操作](ch2_stack_queue/Problem.md) |  3   |              [插入弹出栈](ch2_stack_queue/6.py)              |    [Double-Stack](ch2_stack_queue/thinking2.md)    |
+|  7   |    [设计排序系统](ch2_stack_queue/Problems.md)     |  4   |               [双向队列](ch2_stack_queue/7.py)               | [Double-ended queue](ch2_stack_queue/thinking2.md) |
+|  8   |   [实现LRU缓存方案](ch2_stack_queue/Problems.md)   |  4   |           [双向队列和哈希表](ch2_stack_queue/8.py)           |    [deque、hash](ch2_stack_queue/thinking2.md)     |
+|  9   | [从给定车票找出旅程](ch2_stack_queue/Problems.md)  |  3   |                [哈希法](ch2_stack_queue/9.py)                |        [Hash](ch2_stack_queue/thinking2.md)        |
+|  10  | [数组中找出条件数对](ch2_stack_queue/Problems.md)  |  3   |               [字典法](ch2_stack_queue/10.py)                |        [Dict](ch2_stack_queue/thinking2.md)        |
 

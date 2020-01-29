@@ -25,10 +25,39 @@ class Stack:
     def push(self,item):
         self.items.append(item)
 
-#求栈的最小元素
-def minsOfStack(s):
-    elemStack = Stack()
-    minStack = Stack()
+class MyStack:
+    def __init__(self):
+        self.elemStack = Stack()
+        self.minStack = Stack()
+    def push(self,data):
+        self.elemStack.push(data)
+        #更新保存最小元素的栈
+        if self.minStack.isEmpty():
+            self.minStack.push(data)
+        else:
+            if data <= self.minStack.top():
+                self.minStack.push(data)
+    def pop(self):
+        topData = self.elemStack.top()
+        self.elemStack.pop()
+        if topData == self.mins():
+            self.minStack.pop()
+        return topData
+    def mins(self):
+        if self.minStack.isEmpty():
+            return 0
+        else:
+            return self.minStack.top()
     
+if __name__ == "__main__":
+    stack = MyStack()
+    stack.push(5)
+    print(u"栈中最小值为:"+str(stack.mins()))
+    stack.push(6)
+    print(u"栈中最小值为:"+str(stack.mins()))
+    stack.push(2)
+    print(u"栈中最小值为:"+str(stack.mins()))
+    stack.pop()
+    print(u"栈中最小值为:"+str(stack.mins()))
 
 
