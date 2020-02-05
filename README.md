@@ -120,14 +120,14 @@ class BiTNode:
 
 | 序号 |                             问题                             | 难度 |                             代码                             |                     原理                      |
 | :--: | :----------------------------------------------------------: | :--: | :----------------------------------------------------------: | :-------------------------------------------: |
-|  1   |   [二叉树中放入有序整数数组](ch3_binary_tree/Problems.md)    |  4   |                 [递归](ch3_binary_tree/1.py)                 |   [Recursion](ch3_binary_tree/thinking1.py)   |
-|  2   |    [从顶部逐层打印结点数据](ch3_binary_tree/Problems.md)     |  3   |                 [队列](ch3_binary_tree/2.py)                 |     [Queue](ch3_binary_tree/thinking1.py)     |
-|  3   |      [二叉树的最大子树和](ch3_binary_tree/Problems.md)       |  4   |               [后序遍历](ch3_binary_tree/3.py)               |  [AfterOrder](ch3_binary_tree/thinking1.py)   |
-|  4   |        [判断二叉树相等](ch3_binary_tree/Problems.md)         |  3   |                 [递归](ch3_binary_tree/4.py)                 |   [Recursion](ch3_binary_tree/thinking1.py)   |
-|  5   |     [二叉树转换为双向链表](ch3_binary_tree/Problems.md)      |  4   |               [双向链表](ch3_binary_tree/5.py)               |     [List](ch3_binary_tree/thinking2.py)      |
-|  6   | [判断数组是否是二元查找树后序遍历的序列](ch3_binary_tree/Problems.md) |  4   |               [后序遍历](ch3_binary_tree/6.py)               |  [AfterOrder](ch3_binary_tree/thinking2.py)   |
-|  7   | [找出两个结点的最近共同父结点](ch3_binary_tree/Problems.md)  |  3   | 1.[路径对比](ch3_binary_tree/7_1.py)2.1.[结点编号](ch3_binary_tree/7_2.py) | [Route、Number](ch3_binary_tree/thinking2.py) |
-|  8   |          [复制二叉树](ch3_binary_tree/Problems.md)           |  3   |                                                              |                                               |
+|  1   |   [二叉树中放入有序整数数组](ch3_binary_tree/Problems.md)    |  4   |                 [递归](ch3_binary_tree/1.py)                 |   [Recursion](ch3_binary_tree/thinking1.md)   |
+|  2   |    [从顶部逐层打印结点数据](ch3_binary_tree/Problems.md)     |  3   |                 [队列](ch3_binary_tree/2.py)                 |     [Queue](ch3_binary_tree/thinking1.md)     |
+|  3   |      [二叉树的最大子树和](ch3_binary_tree/Problems.md)       |  4   |               [后序遍历](ch3_binary_tree/3.py)               |  [AfterOrder](ch3_binary_tree/thinking1.md)   |
+|  4   |        [判断二叉树相等](ch3_binary_tree/Problems.md)         |  3   |                 [递归](ch3_binary_tree/4.py)                 |   [Recursion](ch3_binary_tree/thinking1.md)   |
+|  5   |     [二叉树转换为双向链表](ch3_binary_tree/Problems.md)      |  4   |               [双向链表](ch3_binary_tree/5.py)               |     [List](ch3_binary_tree/thinking2.md)      |
+|  6   | [判断数组是否是二元查找树后序遍历的序列](ch3_binary_tree/Problems.md) |  4   |               [后序遍历](ch3_binary_tree/6.py)               |  [AfterOrder](ch3_binary_tree/thinking2.md)   |
+|  7   | [找出两个结点的最近共同父结点](ch3_binary_tree/Problems.md)  |  3   | 1.[路径对比](ch3_binary_tree/7_1.py)2.1.[结点编号](ch3_binary_tree/7_2.py) | [Route、Number](ch3_binary_tree/thinking2.md) |
+|  8   |          [复制二叉树](ch3_binary_tree/Problems.md)           |  3   |                 [递归](ch3_binary_tree/8.py)                 |   [Recursion](ch3_binary_tree/thinking2.md)   |
 |  9   |    [找出任意整数的所有路径](ch3_binary_tree/Problems.md)     |  4   |                                                              |                                               |
 |  10  |     [对二叉树进行镜像反转](ch3_binary_tree/Problems.md)      |  3   |                                                              |                                               |
 |  11  | [二叉排序树中找出第一个大于中间值的结点](ch3_binary_tree/Problems.md) |  4   |                                                              |                                               |
