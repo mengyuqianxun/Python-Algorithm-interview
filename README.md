@@ -1,3 +1,5 @@
+
+
 # Python程序员面试算法宝典
 
 **ghs,2019-10.28**
@@ -14,7 +16,7 @@
 | :------: | :-------------------------------: |
 |    1     |           [链表](#链表)           |
 |    2     | [栈、队列和哈希](#栈、队列和哈希) |
-|    3     |              二叉树               |
+|    3     |         [二叉树](#二叉树)         |
 |    4     |               数组                |
 |    5     |              字符串               |
 |    6     |           基本数字运算            |
@@ -76,4 +78,59 @@ class LNode:
 |  8   |   [实现LRU缓存方案](ch2_stack_queue/Problems.md)   |  4   |           [双向队列和哈希表](ch2_stack_queue/8.py)           |    [deque、hash](ch2_stack_queue/thinking2.md)     |
 |  9   | [从给定车票找出旅程](ch2_stack_queue/Problems.md)  |  3   |                [哈希法](ch2_stack_queue/9.py)                |        [Hash](ch2_stack_queue/thinking2.md)        |
 |  10  | [数组中找出条件数对](ch2_stack_queue/Problems.md)  |  3   |               [字典法](ch2_stack_queue/10.py)                |        [Dict](ch2_stack_queue/thinking2.md)        |
+
+
+
+## 二叉树
+
+&emsp;&emsp;二叉树(Binary Tree)也称为二分数、二元树等，它是n个有限元素的集合，该集合或者为空、或者由一个称为根(root)的元素以及两个不相交、分别被称为左子树和右子树的二叉树组成。
+
+&emsp;&emsp;二叉树的递归定义为：二叉树或者是一棵空树，或者是一颗由一个根结点和两棵互不相交的分别称作根结点的左子树和右子树所组成的非空树，左子树和右子树又同样都是一棵二叉树。
+
+* 结点的度：结点所拥有的的子树的个数称为该结点的度。
+* 叶子结点：度为0的结点称为叶子结点。
+* 分支节点：度不为0的结点称为分支结点。
+* 左孩子、右孩子、双亲：一个结点的子树的根结点称为这个结点的孩子，这个结点称为它孩子结点的双亲。具有同一个双亲的孩子结点互称为兄弟。
+* 路径、路径长度：如果一棵树的一串结点n1、n2……nk有如下关系：结点ni是ni+1的父结点，就把n1、n2……nk称为一条由n1到nk的路径。这条路径的长度为k-1.
+* 祖先、子孙：如果有一条路径从结点M到结点N，那么M就称为N的祖先，而N称为M的子孙。
+* 结点的层数：规定树的根结点的层数为1，其余结点的层数等于它的双亲结点的层数加一。
+* 树的深度：树中所有结点的最大层数称为树的深度。
+* 树的度：树中各结点度的最大值称为该树的度。
+* 满二叉树：在一棵二叉树中，如果所有的分支结点都存在左子树和右子树，并且所有叶子结点都在同一层上，这样的二叉树称作满二叉树。
+* 完全二叉树：一棵深度为k的有n个结点的二叉树，对树中的结点按从上至下、从左至右的顺序进行编号，如果编号为i的结点和满二叉树中编号为i的结点在二叉树中的位置相同，则这棵二叉树称为完全二叉树。
+
+![](binary_tree.png)
+
+&emsp;&emsp;二叉树的基本性质如下所示：
+
+1. 一颗非空二叉树的第$i$层上最多有$ 2^{n-1} $个结点。
+2. 一棵深度为$k$的二叉树中，最多具有$2 ^k -1$个结点，最少有$k$个结点。
+3. 对于一棵非空的二叉树，度为0的结点总是比度为2的结点多一个，即如果叶子结点数为$n0$，度为2的结点数为$n2$，则有$n0 = n2 +1$。
+4. 具有$n$个结点的完全二叉树的深度为「${log}_2 n$」+1。
+
+&emsp;&emsp;二叉树有顺序存储和链式存储两种存储结构。
+
+```python
+class BiTNode:
+    def __init__(self):
+        self.data = None
+        self.lchild = None
+        self.rchild = None
+```
+
+| 序号 |                             问题                             | 难度 |                             代码                             |                     原理                      |
+| :--: | :----------------------------------------------------------: | :--: | :----------------------------------------------------------: | :-------------------------------------------: |
+|  1   |   [二叉树中放入有序整数数组](ch3_binary_tree/Problems.md)    |  4   |                 [递归](ch3_binary_tree/1.py)                 |   [Recursion](ch3_binary_tree/thinking1.py)   |
+|  2   |    [从顶部逐层打印结点数据](ch3_binary_tree/Problems.md)     |  3   |                 [队列](ch3_binary_tree/2.py)                 |     [Queue](ch3_binary_tree/thinking1.py)     |
+|  3   |      [二叉树的最大子树和](ch3_binary_tree/Problems.md)       |  4   |               [后序遍历](ch3_binary_tree/3.py)               |  [AfterOrder](ch3_binary_tree/thinking1.py)   |
+|  4   |        [判断二叉树相等](ch3_binary_tree/Problems.md)         |  3   |                 [递归](ch3_binary_tree/4.py)                 |   [Recursion](ch3_binary_tree/thinking1.py)   |
+|  5   |     [二叉树转换为双向链表](ch3_binary_tree/Problems.md)      |  4   |               [双向链表](ch3_binary_tree/5.py)               |     [List](ch3_binary_tree/thinking2.py)      |
+|  6   | [判断数组是否是二元查找树后序遍历的序列](ch3_binary_tree/Problems.md) |  4   |               [后序遍历](ch3_binary_tree/6.py)               |  [AfterOrder](ch3_binary_tree/thinking2.py)   |
+|  7   | [找出两个结点的最近共同父结点](ch3_binary_tree/Problems.md)  |  3   | 1.[路径对比](ch3_binary_tree/7_1.py)2.1.[结点编号](ch3_binary_tree/7_2.py) | [Route、Number](ch3_binary_tree/thinking2.py) |
+|  8   |          [复制二叉树](ch3_binary_tree/Problems.md)           |  3   |                                                              |                                               |
+|  9   |    [找出任意整数的所有路径](ch3_binary_tree/Problems.md)     |  4   |                                                              |                                               |
+|  10  |     [对二叉树进行镜像反转](ch3_binary_tree/Problems.md)      |  3   |                                                              |                                               |
+|  11  | [二叉排序树中找出第一个大于中间值的结点](ch3_binary_tree/Problems.md) |  4   |                                                              |                                               |
+|  12  |       [找出路径最大的和](ch3_binary_tree/Problems.md)        |  4   |                                                              |                                               |
+|  13  |      [实现反向DNS查找缓存](ch3_binary_tree/Problems.md)      |  4   |                                                              |                                               |
 
