@@ -17,7 +17,7 @@
 |    1     |           [链表](#链表)           |
 |    2     | [栈、队列和哈希](#栈、队列和哈希) |
 |    3     |         [二叉树](#二叉树)         |
-|    4     |               数组                |
+|    4     |           [数组](#数组)           |
 |    5     |              字符串               |
 |    6     |           基本数字运算            |
 |    7     |          排列组合与概率           |
@@ -128,9 +128,13 @@ class BiTNode:
 |  6   | [判断数组是否是二元查找树后序遍历的序列](ch3_binary_tree/Problems.md) |  4   |               [后序遍历](ch3_binary_tree/6.py)               |  [AfterOrder](ch3_binary_tree/thinking2.md)   |
 |  7   | [找出两个结点的最近共同父结点](ch3_binary_tree/Problems.md)  |  3   | 1.[路径对比](ch3_binary_tree/7_1.py)2.1.[结点编号](ch3_binary_tree/7_2.py) | [Route、Number](ch3_binary_tree/thinking2.md) |
 |  8   |          [复制二叉树](ch3_binary_tree/Problems.md)           |  3   |                 [递归](ch3_binary_tree/8.py)                 |   [Recursion](ch3_binary_tree/thinking2.md)   |
-|  9   |    [找出任意整数的所有路径](ch3_binary_tree/Problems.md)     |  4   |                                                              |                                               |
-|  10  |     [对二叉树进行镜像反转](ch3_binary_tree/Problems.md)      |  3   |                                                              |                                               |
-|  11  | [二叉排序树中找出第一个大于中间值的结点](ch3_binary_tree/Problems.md) |  4   |                                                              |                                               |
-|  12  |       [找出路径最大的和](ch3_binary_tree/Problems.md)        |  4   |                                                              |                                               |
-|  13  |      [实现反向DNS查找缓存](ch3_binary_tree/Problems.md)      |  4   |                                                              |                                               |
+|  9   |    [找出任意整数的所有路径](ch3_binary_tree/Problems.md)     |  4   |               [先序遍历](ch3_binary_tree/9.py)               |  [BeforeOrder](ch3_binary_tree/thinking3.md)  |
+|  10  |     [对二叉树进行镜像反转](ch3_binary_tree/Problems.md)      |  3   |                [递归](ch3_binary_tree/10.py)                 |   [Recursion](ch3_binary_tree/thinking3.md)   |
+|  11  | [二叉排序树中找出第一个大于中间值的结点](ch3_binary_tree/Problems.md) |  4   |              [中序遍历](ch3_binary_tree/11.py)               |    [InOrder](ch3_binary_tree/thinking3.md)    |
+|  12  |       [找出路径最大的和](ch3_binary_tree/Problems.md)        |  4   |              [后序遍历](ch3_binary_tree/12.py)               |  [AfterOrder](ch3_binary_tree/thinking3.md)   |
+|  13  |      [实现反向DNS查找缓存](ch3_binary_tree/Problems.md)      |  4   |               [Trie树](ch3_binary_tree/13.py)                |     [Trie](ch3_binary_tree/thinking3.md)      |
+
+
+
+## 数组
 

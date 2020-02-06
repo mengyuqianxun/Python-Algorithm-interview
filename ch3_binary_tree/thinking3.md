@@ -20,9 +20,33 @@
 
 ## 12.找出路径最大的和
 
-&emsp;&emsp;路径可以以任意结点为起点和终点，可以通过后序遍历来解决。
+&emsp;&emsp;可以通过后序遍历来解决。具体思路如下：
 
+* 求出以root.lchild为起始结点，叶子结点为终结点的最大路径和maxLeft；
 
+* 同理求出以root.rchild为初始结点，叶子结点为终点的最大路径和maxRight。
+
+  包含root结点的最长路径可能包含如下三种情况：
+
+1. leftMax=root.sums+maxLeft(右子树最大路径和可能为负)。
+2. rightMax=root.sums+maxRight(左子树最大路径和可能为负)。
+3. allMax=root.sums+maxLeft+maxRight(左右子树的最大路径和都不为负)。
+
+&emsp;&emsp;因此，包含root结点的最大路径和为tmpMax=max(leftMax,rightMax,allMax)。在求出包含root结点的最大路径后，如果tmpMax>max，那么更新最大路径和为tmpMax。
+
+&emsp;&emsp;**性能分析**：二叉树后序遍历的时间复杂度为O(N)，因此，这种方法的时间复杂度也为O(N)。
 
 ## 13.实现反向DNS查找缓存
+
+&emsp;&emsp;要实现反向DNS查找缓存，主要需要完成如下功能：
+
+1. 将IP地址添加到缓存中的URL映射。
+2. 根据给定的IP地址查找对应的URL。
+
+&emsp;&emsp;常见的一种解决方案是使用字典法(使用字典来存储IP地址与URL之间的映射关系)。另外一种更好的方法是Trie树。这种方法的主要优点如下：
+
+1. 使用Trie树，在最坏的情况下时间复杂度为O(1)，而哈希方法在平均情况下的时间复杂度为O(1)；
+2. Trie树可以实现前缀搜索(对于有相同前缀的IP地址，可以寻找所有的URL)。
+
+&emsp;&emsp;Internet IP地址只包含有11个字母(0到9和.)。所以，本题实现的主要思路为：在Trie树中存储IP地址，而在最后一个结点中存储对应的域名。
 
