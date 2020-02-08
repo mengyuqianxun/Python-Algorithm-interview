@@ -138,23 +138,23 @@ class BiTNode:
 
 &emsp;&emsp;数组是某类型的数据按照一定的顺序组成的数据的集合。如果将有限个类型相同的变量的集合命名，那么这个称为数组名。组成数组的各个变量称为数组的分量，也称为数组的元素。用于区分数组的各个元素的数字编号称为下标。
 
-| 序号 |                       问题                       | 难度 | 代码 | 原理 |
-| :--: | :----------------------------------------------: | :--: | :--: | :--: |
-|  1   | [找出数组中唯一重复元素](ch4_array/Problems1.md) |  3   |      |      |
-|  2   |   [查找最大值、最小值](ch4_array/Problems1.md)   |  3   |      |      |
-|  3   | [找出旋转数组的最小元素](ch4_array/Problems1.md) |  3   |      |      |
-|  4   |   [找出数组中丢失的数](ch4_array/Problems1.md)   |  4   |      |      |
-|  5   |   [寻找出现奇数次的数](ch4_array/Problems1.md)   |  3   |      |      |
-|  6   |     [找出第k小的数](ch4_array/Problems1.md)      |  4   |      |      |
-|  7   | [求出两个元素的最小距离](ch4_array/Problems1.md) |  3   |      |      |
-|  8   |   [求解最小三元组距离](ch4_array/Problems1.md)   |  4   |      |      |
-|  9   |    [求绝对值最小的数](ch4_array/Problems1.md)    |  3   |      |      |
-|  10  |    [求数组连续最大和](ch4_array/Problems1.md)    |  4   |      |      |
-|  11  |    [寻找出现1次的数](ch4_array/Problems1.md)     |  4   |      |      |
-|  12  |        [旋转数组](ch4_array/Problems1.md)        |  3   |      |      |
-|  13  |     [不排序求中位数](ch4_array/Problems1.md)     |  4   |      |      |
-|  14  |     [求集合所有子集](ch4_array/Problems1.md)     |  4   |      |      |
-|  15  |     [对数组循环移位](ch4_array/Problems1.md)     |  3   |      |      |
+| 序号 |                       问题                       | 难度 |                             代码                             |                原理                |
+| :--: | :----------------------------------------------: | :--: | :----------------------------------------------------------: | :--------------------------------: |
+|  1   | [找出数组中唯一重复元素](ch4_array/Problems1.md) |  3   | 1.[异或法](ch4_array/1_3.py)2.[数据映射法](ch4_array/1_4.py) | [xor、map](ch4_array/thinking1.md) |
+|  2   |   [查找最大值、最小值](ch4_array/Problems1.md)   |  3   |                                                              |                                    |
+|  3   | [找出旋转数组的最小元素](ch4_array/Problems1.md) |  3   |                                                              |                                    |
+|  4   |   [找出数组中丢失的数](ch4_array/Problems1.md)   |  4   |                                                              |                                    |
+|  5   |   [寻找出现奇数次的数](ch4_array/Problems1.md)   |  3   |                                                              |                                    |
+|  6   |     [找出第k小的数](ch4_array/Problems1.md)      |  4   |                                                              |                                    |
+|  7   | [求出两个元素的最小距离](ch4_array/Problems1.md) |  3   |                                                              |                                    |
+|  8   |   [求解最小三元组距离](ch4_array/Problems1.md)   |  4   |                                                              |                                    |
+|  9   |    [求绝对值最小的数](ch4_array/Problems1.md)    |  3   |                                                              |                                    |
+|  10  |    [求数组连续最大和](ch4_array/Problems1.md)    |  4   |                                                              |                                    |
+|  11  |    [寻找出现1次的数](ch4_array/Problems1.md)     |  4   |                                                              |                                    |
+|  12  |        [旋转数组](ch4_array/Problems1.md)        |  3   |                                                              |                                    |
+|  13  |     [不排序求中位数](ch4_array/Problems1.md)     |  4   |                                                              |                                    |
+|  14  |     [求集合所有子集](ch4_array/Problems1.md)     |  4   |                                                              |                                    |
+|  15  |     [对数组循环移位](ch4_array/Problems1.md)     |  3   |                                                              |                                    |
 
 
 
