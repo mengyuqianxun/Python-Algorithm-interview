@@ -6,6 +6,8 @@
 
 ![Cover](cover.jpg)
 
+&emsp;&emsp;ps.问题被放置在problem文件中，原理被放置在thinking文件中，便于复习、思考。
+
 ## 常用数据结构实现
 
 &emsp;&emsp;本块主要列举书中所涉及到的数据结构的实现。其中都用Python进行编译。
@@ -148,13 +150,10 @@ class BiTNode:
 |  6   |     [找出第k小的数](ch4_array/Problems1.md)      |  4   | 1.[部分排序法](ch4_array/6_1.py)2.[类快速排序法](ch4_array/6_2.py) |         [sort、quick sort](ch4_array/thinking1.md)         |
 |  7   | [求出两个元素的最小距离](ch4_array/Problems1.md) |  3   |  1.[蛮力法](ch4_array/7_1.py)2.[动态规划](ch4_array/7_2.py)  | [brute force、dynamic programming](ch4_array/thinking1.md) |
 |  8   |   [求解最小三元组距离](ch4_array/Problems1.md)   |  4   |                 [最小距离法](ch4_array/8.py)                 |         [minimum distance](ch4_array/thinking1.md)         |
-|  9   |    [求绝对值最小的数](ch4_array/Problems1.md)    |  3   |                                                              |                                                            |
-|  10  |    [求数组连续最大和](ch4_array/Problems1.md)    |  4   |                                                              |                                                            |
-|  11  |    [寻找出现1次的数](ch4_array/Problems1.md)     |  4   |                                                              |                                                            |
-|  12  |        [旋转数组](ch4_array/Problems1.md)        |  3   |                                                              |                                                            |
-|  13  |     [不排序求中位数](ch4_array/Problems1.md)     |  4   |                                                              |                                                            |
-|  14  |     [求集合所有子集](ch4_array/Problems1.md)     |  4   |                                                              |                                                            |
-|  15  |     [对数组循环移位](ch4_array/Problems1.md)     |  3   |                                                              |                                                            |
+|  9   |    [求数组连续最大和](ch4_array/Problems1.md)    |  4   |                  [动态规划](ch4_array/9.py)                  |       [dynamic programming](ch4_array/thinking2.md)        |
+|  10  |    [寻找出现1次的数](ch4_array/Problems1.md)     |  4   |                  [异或法](ch4_array/10.py)                   |               [xor](ch4_array/thinking2.md)                |
+|  11  |     [不排序求中位数](ch4_array/Problems1.md)     |  4   |               [类快速排序法](ch4_array/11.py)                |            [quick sort](ch4_array/thinking2.md)            |
+|  12  |     [对数组循环移位](ch4_array/Problems1.md)     |  3   |                  [翻转法](ch4_array/12.py)                   |               [flip](ch4_array/thinking2.md)               |
 
 
 
