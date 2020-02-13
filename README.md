@@ -157,17 +157,12 @@ class BiTNode:
 
 
 
-| 序号 | 问题 | 难度 | 代码 | 原理 |
-| :--: | :--: | :--: | :--: | :--: |
-|  16  |      |      |      |      |
-|  17  |      |      |      |      |
-|  17  |      |      |      |      |
-|  19  |      |      |      |      |
-|  20  |      |      |      |      |
-|  21  |      |      |      |      |
-|  22  |      |      |      |      |
-|  23  |      |      |      |      |
-|  24  |      |      |      |      |
-|  25  |      |      |      |      |
-|  26  |      |      |      |      |
+| 序号 |                         问题                         | 难度 |                           代码                            |                    原理                     |
+| :--: | :--------------------------------------------------: | :--: | :-------------------------------------------------------: | :-----------------------------------------: |
+|  13  |       [按要求构造数组](ch4_array/Problems2.md)       |  3   |                [逆向遍历](ch4_array/13.py)                | [Reverse Traversal](ch4_array/thinking3.md) |
+|  14  |        [求解迷宫问题](ch4_array/Problems2.md)        |  4   |                 [回溯法](ch4_array/14.md)                 |   [Backtracking](ch4_array/thinking3.md)    |
+|  15  |  [三个有序数组中找公共元素](ch4_array/Problems2.md)  |  4   |                 [比较法](ch4_array/15.py)                 |    [Comparison](ch4_array/thinking3.md)     |
+|  16  | [对有大量重复元素的数组排序](ch4_array/Problems2.md) |  4   | 1.[AVL树](ch4_array/14_1.py)2.[哈希法](ch4_array/14_2.py) |   [AVLtree、Hash](ch4_array/thinking3.md)   |
+|  17  |       [对任务进行调度](ch4_array/Problems2.md)       |  4   |                [贪心算法](ch4_array/17.py)                |      [Greedy](ch4_array/thinking3.md)       |
+|  18  |         [对磁盘分区](ch4_array/Problems2.md)         |  4   |                [双重遍历](ch4_array/18.py)                |  [Double Traverse](ch4_array/thinking3.md)  |
 
